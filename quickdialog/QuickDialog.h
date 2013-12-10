@@ -65,3 +65,22 @@
 #import "QRootBuilder.h"
 
 #import "QTextField.h"
+
+//--------------------------------------------------------------------------------
+//Extras
+//--------------------------------------------------------------------------------
+
+
+#import "QWebViewController.h"
+#import "QMapViewController.h"
+#import "QMapAnnotation.h"
+#import "QPickerTableViewCell.h"
+#import "QPickerTabDelimitedStringParser.h"
+#import "QPickerElement.h"
+#import "QPickerValueParser.h"
+#import "QWebElement.h"
+#import "QWebViewController.h"
+#import "QMapElement.h"
+#import "UIColor+ColorUtilities.h"
+#import "QColorPickerElement.h"
+#import "QMailElement.h"

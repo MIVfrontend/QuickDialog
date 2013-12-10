@@ -56,7 +56,7 @@ typedef enum  {
 @property(nonatomic, strong) NSIndexPath *preselectedElementIndex;
 
 @property(nonatomic, copy) void (^onValueChanged)(QRootElement *);
-
+@property(nonatomic,strong) NSMutableDictionary* userInfo;
 
 - (QRootElement *)init;
 
