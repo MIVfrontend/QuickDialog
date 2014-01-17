@@ -100,6 +100,7 @@
     self.quickDialogTableView.root = root;
     self.title = _root.title;
     self.navigationItem.title = _root.title;
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -113,6 +114,8 @@
             [self.quickDialogTableView scrollToRowAtIndexPath:_root.preselectedElementIndex atScrollPosition:UITableViewScrollPositionTop animated:NO];
 
     }
+    self.resizeWhenKeyboardPresented=NO;
+    [self setResizeWhenKeyboardPresented:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
