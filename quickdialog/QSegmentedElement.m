@@ -59,6 +59,8 @@
     control.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     control.segmentedControlStyle = UISegmentedControlStyleBar;
     control.selectedSegmentIndex = _selected;
+    control.tintColor=self.appearance.valueColorEnabled;
+    control.backgroundColor=self.appearance.backgroundColorEnabled;
     control.tag = 4321;
     
     [cell.contentView addSubview:control];
