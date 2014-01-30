@@ -55,8 +55,10 @@
     cell.backgroundColor = [UIColor clearColor];
     UISegmentedControl *control = [[UISegmentedControl alloc] initWithItems:_items];
     [control addTarget:self action:@selector(handleSegmentedControlValueChanged:) forControlEvents:UIControlEventValueChanged];
-    control.frame = cell.contentView.bounds;
-    control.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    CGRect bounds = cell.contentView.bounds;
+    control.frame = CGRectMake(bounds.origin.x + 20.0f, bounds.origin.y +5.0f, bounds.size.width - 40.0f, bounds.size.height - 10.0f);
+    control.autoresizingMask = //UIViewAutoresizingFlexibleWidth |
+    UIViewAutoresizingFlexibleHeight;
     control.segmentedControlStyle = UISegmentedControlStyleBar;
     control.selectedSegmentIndex = _selected;
     control.tintColor=self.appearance.valueColorEnabled;
