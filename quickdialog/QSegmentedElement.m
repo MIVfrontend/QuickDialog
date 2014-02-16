@@ -43,7 +43,6 @@
     _selected = ((UISegmentedControl *)control).selectedSegmentIndex;
 
     [self handleElementSelected:_controller];
-    
     [self handleEditingChanged];
 }
 
